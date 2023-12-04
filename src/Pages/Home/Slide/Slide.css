@@ -1,0 +1,14 @@
+.annimation {
+    animation: slide-in 20s linear infinite; /* Adjust the duration and other properties as needed */
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%); /* Start position, adjust if needed */
+    }
+  
+    100% {
+      transform: translateX(-0%); /* End position, adjust if needed */
+    }
+  }
+  
