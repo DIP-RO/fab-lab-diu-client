@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
         <div className="text-center border-spacing-0.5 border-gray-700 border-t my-10">
             <h1 className=" mt-5 font-semibold text-3xl"> Meet Us At</h1>
-            <h1 className=" mt-5 font-semibold text-2xl">DIU NLP & Machine Learning Research LAB</h1>
+            <h1 className=" mt-5 font-semibold text-2xl">DIU FABLAB & INNOVATION LAB</h1>
             <h1 className=" mt-5 text-xl">Daffodil International University</h1>
         </div>
       </div>
@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
         <div className="text-center border-spacing-0.5 border-gray-700 border-t my-10">
             <h1 className=" mt-5 font-semibold text-3xl"> Phone Number</h1>
-            <h1 className=" mt-5 font-semibold text-2xl">+880 1864007005</h1>
+            <h1 className=" mt-5 font-semibold text-2xl">+880 1*************</h1>
         </div>
       </div>
       <div className=" border-spacing-0.5 border-gray-700 border  mx-5 rounded-lg bg-base-200">
@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
         <div className="text-center border-spacing-0.5 border-gray-700 border-t my-10">
             <h1 className=" mt-5 font-semibold text-3xl"> Email Us</h1>
-            <h1 className=" mt-5 font-semibold text-2xl">nlp@diu.edu.bd</h1>
+            <h1 className=" mt-5 font-semibold text-2xl">fablab@diu.edu.bd</h1>
             
         </div>
       </div>
