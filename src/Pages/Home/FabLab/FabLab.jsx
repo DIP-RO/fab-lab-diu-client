@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-
-
+import { BsCalendar2Event } from "react-icons/bs";
+import { IoMdArrowDropright } from "react-icons/io";
 const FabLab = () => {
     return (
         <div className="hero  bg-base-100 flex ">
@@ -17,25 +17,25 @@ const FabLab = () => {
             </div>
             <div className="w-1/2 mx-5">
                 <div className="card w-full bg-base-100  flex-col items-center justify-center">
-                    <h1 className="text-5xl font-bold">NEWS</h1>
+                    <h1 className="text-5xl font-bold flex gap-5"><BsCalendar2Event className="text-[#2e3094]" /> NEWS</h1>
                     <div className="card-body">
                         <Link>
-                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline">A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
+                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline flex gap-2"><IoMdArrowDropright className="text-[#2e3094] text-3xl"/> A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
                         </Link>
                         <Link>
-                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline">A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
+                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline flex gap-2"><IoMdArrowDropright className="text-[#2e3094] text-3xl"/>A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
                         </Link>
                         <Link>
-                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline">A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
+                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline flex gap-2"><IoMdArrowDropright className="text-[#2e3094] text-3xl"/>A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
                         </Link>
                         <Link>
-                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline">A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
+                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline flex gap-2"><IoMdArrowDropright className="text-[#2e3094] text-3xl"/>A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
                         </Link>
                         <Link>
-                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline">A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
+                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline flex gap-2"><IoMdArrowDropright className="text-[#2e3094] text-3xl"/>A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
                         </Link>
                         <Link>
-                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline">A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
+                        <p className="border-black border-spacing-1 border px-3 py-2 hover:underline flex gap-2"><IoMdArrowDropright className="text-[#2e3094] text-3xl"/>A WORKSHOP ON “DIGITAL FABRICATION FACILITIES FOR ADVANCE RESEARCH” WAS....</p>
                         </Link>
                         
                     </div>

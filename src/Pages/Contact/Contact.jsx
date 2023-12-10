@@ -13,7 +13,7 @@ const Contact = () => {
 
     },
     links: [
-      { label: 'About Us', icon: RiArrowRightDoubleFill },
+      { label: 'About Us', icon: RiArrowRightDoubleFill , color: 'text-black'},
       { label: 'Contact', icon: RiArrowRightDoubleFill, color: 'text-[#2e3094]' },
     ],
   };

@@ -24,6 +24,9 @@ import Product from "../Pages/Product/Product";
 import Project from "../Pages/Project/Project";
 import ComingSoon from "../Pages/ComingSoon/ComingSoon";
 import Events from "../Pages/Events/Events";
+import Image from "../Pages/Image/Image";
+import DashBoard from "../Layout/DashBoard";
+import DashBoardContact from "../Pages/Dashboard/DashBoardContact/DashBoardContact";
  export const router = createBrowserRouter([
     {
       path: "/",
@@ -93,6 +96,10 @@ import Events from "../Pages/Events/Events";
           path: "/CompleteEvents",
           element: <Events ></Events>,
         },
+        {
+          path: "/image",
+          element: <Image></Image>,
+        },
 
       ],
     },
@@ -118,6 +125,20 @@ import Events from "../Pages/Events/Events";
         },
       ],
       
-    }, 
+    },
+    {
+      path: "/dashboard",
+      element: <DashBoard></DashBoard>,
+      children: [
+        {
+          path: "/dashboard",
+          element: <h1 className=" text-center text-3xl font-bold mt-20">Welcome To Dashboard</h1>,
+        },
+        {
+          path: "/dashboard/contact",
+          element:<DashBoardContact></DashBoardContact>,
+        },
+      ],
+    } 
   ]);
   

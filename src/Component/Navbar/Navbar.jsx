@@ -97,7 +97,7 @@ const Navbar = () => {
                                 <div className="card-body grid grid-cols-2 gap-10">
 
                                     
-                                    <Link to='/gallery'>
+                                    <Link to='/image'>
                                     <div className="btn bg-white border-0 hover:bg-white">
                                         <BsImage />
                                         <h2 className="card-title">image</h2>
