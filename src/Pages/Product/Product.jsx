@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Location from '../../Component/Location/Location';
 import { RiArrowRightDoubleFill } from "react-icons/ri";
 
@@ -40,8 +41,10 @@ const Product = () => {
           <div className="card-body">
             <h2 className="card-title">{item.title}</h2>
             <p>{item.description}</p>
-            <div className="card-actions justify-start">
+            <div className="card-actions flex justify-between mt-5">
               <button className="btn bg-[#2e3094] hover:bg-[#2e3094] text-white">Read More</button>
+              <Link to='/order'><button className="btn bg-[#2e3094] hover:bg-[#2e3094] text-white">BUy Now</button></Link>
+              
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import Banner from './Banner/Banner';
 import FabLab from './FabLab/FabLab';
 import Partner from '../../Component/Partner/Partner';
 import RecentEvent from '../../Component/RecentEvent/RecentEvent';
-import Slide from './Slide/Slide';
 
 const Home = () => {
     return (
@@ -12,7 +11,7 @@ const Home = () => {
             <Helmet>
                 <title>Fab Lab DIU | Home</title>
             </Helmet>
-            <Slide />
+            
             <Banner />
             <FabLab />
             <RecentEvent/>

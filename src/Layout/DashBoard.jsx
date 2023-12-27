@@ -11,7 +11,7 @@ const DashBoard = () => {
             <div>
             <Link to="/profile"><button className="btn w-3/4 mx-5 my-2">Fab Charter</button></Link>
             <Link to="/dashboard/contact"><button className="btn w-3/4 mx-5 my-2">Contact</button></Link>
-            <Link to="/profile"><button className="btn w-3/4 mx-5 my-2">People</button></Link>
+            <Link to="/dashboard/people"><button className="btn w-3/4 mx-5 my-2">People</button></Link>
             <Link to="/profile/password"><button className="btn w-3/4 mx-5 my-2">Membership Facilities</button></Link>
             <Link to="/profile"><button className="btn w-3/4 mx-5 my-2">Machineries</button></Link>
             <Link to="/profile/password"><button className="btn w-3/4 mx-5 my-2">Our Activites</button></Link>

@@ -1,21 +1,8 @@
-
-import Location from '../../Component/Location/Location';
-import { RiArrowRightDoubleFill } from "react-icons/ri";
-
-const People = () => {
-
-  const Data = {
-    title: {
-      label: 'People',
-      subLabel: null,
-
-    },
-    links: [
-      { label: null, icon: null },
-      { label: 'People', icon: RiArrowRightDoubleFill, color: 'text-[#2e3094]' },
-    ],
-  };
-
+import React from 'react';
+import DashBoardAddPeople from './DashBoardAddPeople';
+import DashBoardEditPeople from './DashBoardEditPeople';
+import Swal from 'sweetalert2'
+const DashBoardPeople = () => {
   const people = [
     {
       "Name": "Prof. Dr. Syed Akhter Hossain",
@@ -186,59 +173,68 @@ const People = () => {
 
     }
   ]
+  const handleDelete = () => {
 
-
-
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your file has been deleted.",
+          icon: "success"
+        });
+      }
+    });
+  }
 
   return (
     <div>
-      <Location {...Data} />
-      <div className='flex justify-center'>
-        <div className="flex flex-row justify-center items-center align-middle gap-5 w-1/2">
-          <input className="w-full h-10 rounded-[35px] mt-5 px-5 border-slate-950 border-2" type="url" placeholder="Search" />
-          <select className="bg-white mt-5 h-10 hover:bg-white rounded-full border-slate-950 border-2" >
-            <option value="ALL" className="lang text-center">
-              All
-            </option>
-            <option value="বাংলা" className="lang text-center">
-              Management Committee
-            </option>
-            <option value="বাংলা" className="lang text-center">
-              Student Team
-            </option>
-            <option value="বাংলা" className="lang text-center">
-              Researchers
-            </option>
-            <option value="বাংলা" className="lang text-center">
-              Advisory Panel
-            </option>
-            <option value="বাংলা" className="lang text-center">
-              General Members
-            </option>
-          </select>
-        </div>
+      <div className="mx-14 flex justify-between items-center">
+        <input className="w-1/2 h-10 rounded-[35px] mt-5 px-5 border border-black" type="text" placeholder="Search" />
+        <button className="btn btn-sm bg-[#2e3094] hover:bg-[#2e3094] text-white" onClick={() => document.getElementById('modal_add_people').showModal()} >Add People</button>
       </div>
       <div className='flex justify-center p-5 m-5'>
         <div className='grid grid-cols-2 gap-5'>
           {
             people.map((person, index) => (
-              <div key={index} className="card w-96 bg-base-100 shadow-xl border-slate-950 border-spacing-0.5 border">
+              <button onClick={() => document.getElementById('my_modal_4').showModal()} key={index} className="card w-80 bg-base-100 shadow-xl border-slate-950 border-spacing-0.5 border flex flex-col justify-center items-center">
                 <figure className=" p-5 ">
                   <img src={person.img} alt="Shoes" className="rounded-xl w-full h-[250px]" />
                 </figure>
                 <div className="card-body items-center text-center border-slate-950 border-spacing-0.5 border-t">
                   <h2 className="card-title">{person.Name}</h2>
-                  <h2 className="">{person.Designation}</h2>
-                  <h2 className="">{person.Department}</h2>
-                  <p className=" font-bold">{person.Role}</p>
+                  <p>{person.Role}</p>
                 </div>
-              </div>
+              </button>
             ))
           }
         </div>
+        <dialog id="my_modal_4" className="modal">
+          <div className="modal-box flex flex-col justify-center items-center">
+            <h3 className="font-bold text-lg">What Do You Want?</h3>
+            <div className='flex gap-5 mt-5'>
+            <button className='btn text-black' onClick={() => document.getElementById('modal_edit_people').showModal()}>update</button>
+            <button className='btn text-black' onClick={handleDelete}>delete</button>
+            </div>
+            <DashBoardEditPeople />
+          </div>
+
+          
+          <form method="dialog" className="modal-backdrop">
+            <button >close</button>
+          </form>
+        </dialog>
       </div>
+      <DashBoardAddPeople />
     </div>
   );
 };
 
-export default People;
+export default DashBoardPeople;

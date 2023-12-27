@@ -27,6 +27,9 @@ import Events from "../Pages/Events/Events";
 import Image from "../Pages/Image/Image";
 import DashBoard from "../Layout/DashBoard";
 import DashBoardContact from "../Pages/Dashboard/DashBoardContact/DashBoardContact";
+import DashBoardPeople from "../Pages/Dashboard/DashBoardPeople/DashBoardPeople";
+import PrivateRoute from "./PrivateRoutes";
+import Login from "../Pages/Login/Login";
  export const router = createBrowserRouter([
     {
       path: "/",
@@ -65,7 +68,7 @@ import DashBoardContact from "../Pages/Dashboard/DashBoardContact/DashBoardConta
           element: <Membership></Membership>,
         },
         {
-          path: "/materials",
+          path: "/order",
           element: <Materials></Materials>,
         },
         {
@@ -100,6 +103,10 @@ import DashBoardContact from "../Pages/Dashboard/DashBoardContact/DashBoardConta
           path: "/image",
           element: <Image></Image>,
         },
+        {
+          path: "/login",
+          element:<Login></Login>,
+        },
 
       ],
     },
@@ -128,7 +135,7 @@ import DashBoardContact from "../Pages/Dashboard/DashBoardContact/DashBoardConta
     },
     {
       path: "/dashboard",
-      element: <DashBoard></DashBoard>,
+      element: <PrivateRoute> <DashBoard></DashBoard></PrivateRoute>,
       children: [
         {
           path: "/dashboard",
@@ -137,6 +144,10 @@ import DashBoardContact from "../Pages/Dashboard/DashBoardContact/DashBoardConta
         {
           path: "/dashboard/contact",
           element:<DashBoardContact></DashBoardContact>,
+        },
+        {
+          path: "/dashboard/people",
+          element:<DashBoardPeople></DashBoardPeople>,
         },
       ],
     } 

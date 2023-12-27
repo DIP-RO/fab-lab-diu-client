@@ -4,11 +4,11 @@
   
   @keyframes slide-in {
     0% {
-      transform: translateX(100%); /* Start position, adjust if needed */
+      transform: translateX(100%); 
     }
   
     100% {
-      transform: translateX(-0%); /* End position, adjust if needed */
+      transform: translateX(-0%); 
     }
   }
   
