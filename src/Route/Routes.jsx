@@ -30,6 +30,7 @@ import DashBoardContact from "../Pages/Dashboard/DashBoardContact/DashBoardConta
 import DashBoardPeople from "../Pages/Dashboard/DashBoardPeople/DashBoardPeople";
 import PrivateRoute from "./PrivateRoutes";
 import Login from "../Pages/Login/Login";
+import Intra from "../Pages/Intra/Intra";
  export const router = createBrowserRouter([
     {
       path: "/",
@@ -42,6 +43,10 @@ import Login from "../Pages/Login/Login";
         {
           path: "/contact",
           element: <Contact></Contact>,
+        },
+        {
+          path: "/intra",
+          element: <Intra></Intra>,
         },
         {
           path: "/fabCharter",

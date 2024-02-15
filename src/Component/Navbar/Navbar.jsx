@@ -61,6 +61,7 @@ const Navbar = () => {
                             <ul className=" bg-white w-52  -ml-2">
                                 <Link to='/membershipFacilities'><li className="text-base font-semibold hover:bg-base-100 hover:ml-2"><a>Membership Facilities</a></li></Link>
                                 <Link to='/machineries'><li className="text-base font-semibold hover:bg-base-100 hover:ml-2"><a>Machineries</a></li></Link>
+                                <Link to='/intra'><li className="text-base font-semibold hover:bg-base-100 hover:ml-2"><a>Intra</a></li></Link>
                                 <Link to='/labFacilities'><li className="text-base font-semibold hover:bg-base-100 hover:ml-2"><a>Our Activites</a></li></Link>
                             </ul>
                         </div>

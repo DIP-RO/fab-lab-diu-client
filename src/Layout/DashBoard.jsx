@@ -24,6 +24,7 @@ const DashBoard = () => {
             <Link to="/profile/password"><button className="btn w-3/4 mx-5 my-2">Rules</button></Link>
             <Link to="/profile"><button className="btn w-3/4 mx-5 my-2">Video</button></Link>
             <Link to="/profile/password"><button className="btn w-3/4 mx-5 my-2">Product</button></Link>
+            <Link to="/profile/intra"><button className="btn w-3/4 mx-5 my-2">Intra</button></Link>
             
             </div>
             <div className="divider lg:divider-horizontal"></div>
