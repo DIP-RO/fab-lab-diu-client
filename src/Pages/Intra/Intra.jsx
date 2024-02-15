@@ -442,27 +442,22 @@ const Intra = () => {
           Your email address will not be published. Required fields are marked *
         </p>
         <div className="flex gap-5 justify-center mt-4">
-          <p>Comment </p>
-          <textarea className="h-96 w-full border"></textarea>
-        </div>
-        <div className="flex gap-5  mt-4">
-          <p>
-              Name *
-          </p>
-          <input className="border w-1/2 h-14 ml-4"></input>
-        </div>
-        <div className="flex gap-5  mt-4">
-          <p>
-          Email *
-          </p>
-          <input className="border w-1/2 h-14 ml-5"></input>
-        </div>
-        <div className="flex gap-5  mt-4">
-          <p>
-          Website
-          </p>
-          <input className="border w-1/2 h-14 ml-3"></input>
-        </div>
+  <label htmlFor="comment">Comment</label>
+  <textarea id="comment" className="h-96 w-full border"></textarea>
+</div>
+<div className="flex gap-5 mt-4">
+  <label htmlFor="name">Name *</label>
+  <input id="name" className="border w-1/2 h-14 ml-4"></input>
+</div>
+<div className="flex gap-5 mt-4">
+  <label htmlFor="email">Email *</label>
+  <input id="email" className="border w-1/2 h-14 ml-5"></input>
+</div>
+<div className="flex gap-5 mt-4">
+  <label htmlFor="website">Website</label>
+  <input id="website" className="border w-1/2 h-14 ml-3"></input>
+</div>
+
         <div>
           <button className="btn ml-24 mt-5 bg-orange-500 text-white">POST COMMENT</button>
         </div>
